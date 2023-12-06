@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img"
+    android:padding="24dp"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/container"
+        style="@style/containerComponentes"
+        android:layout_width="380dp"
+        android:layout_height="500dp"
+
+
+        android:layout_centerInParent="true"
+        android:alpha="0.7" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/total_question"
+        android:textColor="@color/white"
+        android:text="Questões Totais: "
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"/>
+
+
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/choices_layout"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="This will be the question"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/choices_layout"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/ans_A"
+            android:text="Ans A"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:backgroundTint="@color/brown"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/ans_B"
+            android:text="Ans B"
+
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:backgroundTint="@color/brown"
+            android:layout_marginBottom="15dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/ans_C"
+            android:text="Ans C"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:backgroundTint="@color/brown"
+            android:layout_marginBottom="15dp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/ans_D"
+            android:text="Ans D"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:fontFamily="@font/inknut_antiqua_light"
+            android:backgroundTint="@color/brown"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/choices_layout"
+        android:layout_marginTop="40dp"
+        android:text="Confirmar"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/inknut_antiqua_light"
+        android:backgroundTint="@color/bege"
+
+        />
+
+
+</RelativeLayout>
